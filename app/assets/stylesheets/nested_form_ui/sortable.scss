@@ -1,0 +1,34 @@
+.nested-form-sortable {
+
+  .nested-form-drag {
+    cursor: move;
+  }
+
+  .nested-form-tabs {
+    .nested-form-action {
+      float: right;
+    }
+
+    li {
+      position: relative;
+
+      a {
+        min-width: 20px;
+        min-height: 14px;
+      }
+
+      .nested-form-drag {
+        position: absolute;
+        top: 5px;
+        left: -2px;
+      }
+
+      .nested-form-remove {
+        position: absolute;
+        top: -3px;
+        right: -2px;
+        cursor: pointer;
+      }
+    }
+  }
+}
