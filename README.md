@@ -4,7 +4,7 @@
 
 Gemfile:
 
-    gem 'formtastic-bootstrap', git: 'git://github.com/tb/nested_form_ui.git'
+    gem 'nested_form_ui', '~> 0.0.1'
 
 application.js:
 
