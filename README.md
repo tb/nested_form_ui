@@ -19,21 +19,24 @@ application.scss:
 ### nestedFormSortable
 
     = semantic_nested_form_for @page do |f|
+
       #parts.nested-form-sortable.inputs-vertical-list{ data: { association: 'parts' } }
-        = f.fields_for :parts do |pf|
-          %i.icon-align-justify.nested-form-drag
+        = f.semantic_fields_for :parts do |pf|
+          .nested-form-drag.ui-icon.ui-icon-grip-dotted-vertical
           = pf.text_field :name
           = pf.hidden_field :position
           = pf.link_to_remove do
-            %i.icon-remove
+            .ui-icon.ui-icon-close
 
       = f.link_to_add 'Add part', :parts
       = f.actions
 
-    :plain
+    :javascript
       $(function(){
         $('#parts').nestedFormSortable();
       })
+
+![nestedFormSortable](https://github.com/tb/nested_form_ui/raw/master/img/sortable.png)
 
 ### nestedFormSortableTabs
 
@@ -63,6 +66,8 @@ application.scss:
           }
         });
       })
+
+![nestedFormSortableTabs](https://github.com/tb/nested_form_ui/raw/master/img/sortableTabs.png)
 
 # Copyright
 

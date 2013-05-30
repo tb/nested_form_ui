@@ -7,3 +7,4 @@ spec/dummy/tmp/
 spec/dummy/.sass-cache
 .idea/
 .rvmrc
+nested_form_ui-0.0.1.gem
