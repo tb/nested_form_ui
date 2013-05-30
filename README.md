@@ -27,8 +27,8 @@ application.scss:
           = pf.link_to_remove do
             %i.icon-remove
 
-    = f.link_to_add 'Add part', :parts
-    = f.actions
+      = f.link_to_add 'Add part', :parts
+      = f.actions
 
     :plain
       $(function(){
